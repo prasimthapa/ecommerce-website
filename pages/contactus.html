@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact form</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        body {
+            background-image: url('../images/contactus1.jpg');
+        }
+        
+        h1 {
+            margin: 0 0 20px;
+            font-weight: 400;
+            color: #1c87c9;
+        }
+        
+        p {
+            margin: 0 0 5px;
+        }
+        
+        form {
+            padding: 25px;
+            margin: 25px;
+            box-shadow: 0 2px 5px #f5f5f5;
+            background: beige;
+        }
+        
+        input,
+        textarea {
+            width: calc(100% - 18px);
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #1c87c9;
+            outline: none;
+        }
+        
+        input::placeholder {
+            color: #666;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: linear-gradient(to right, #FFFF00, #3B3bff);
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+        }
+        
+        button:hover {
+            background: #2371a0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation elements -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="./index.html" id="navbar-logo">BOOKBAR</a>
+            <ul class="navbar-menu">
+                <li class="navbar-btn">
+                    <!-- CV page -->
+                    <a href="./product.html" class="navbar-links" id="product-page">PRODUCTS</a>
+                </li>
+                <li class="navbar-btn">
+                    <!-- How tech has affected activities page -->
+                    <a href="./blogs.html" class="navbar-links" id="blogs-page">BLOGS</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="./research.html" class="navbar-links" id="research-page">RESEARCH</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="./contactus.html" class="navbar-links" id="contactus-page">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-block">
+        <form onsubmit="submit$onClickListener()">
+            <h1>Contact Us</h1>
+            <div class="info">
+                <input id="fname" type="text" name="name" placeholder="Full name">
+                <input id="email" type="text" name="name" placeholder="Email">
+                <input id="phoneno" type="text" name="name" placeholder="Phone number">
+                <input id="website" type="text" name="name" placeholder="Address">
+            </div>
+            <p>Message</p>
+            <div>
+                <textarea rows="4"></textarea>
+            </div>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+    <script src="../logic/app.js"></script>
+    <footer class="footer">
+        <p>&copy;BOOKBAR since 2022, All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

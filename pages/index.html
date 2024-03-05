@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> home</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+        #navbar-logo {
+            background: #0099f7;
+            background: -webkit-linear-gradient(to top, #b0f3f1, #ffcfdf);
+            background: linear-gradient(to top, #b0f3f1, #ffcfdf);
+            background-size: 100%;
+            background-clip: unset;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: bold;
+            padding-bottom: 1px;
+            border-bottom: 1px wheat solid;
+        }
+        
+        #navbar-logo:hover {
+            cursor: url("./icons/circle-cursor-active.png"), auto;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation elements -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="./index.html" id="navbar-logo">BOOKBAR</a>
+            <ul class="navbar-menu">
+                <li class="navbar-btn">
+                    <!-- CV page -->
+                    <a href="./product.html" class="navbar-links" id="product-page">PRODUCTS</a>
+                </li>
+                <li class="navbar-btn">
+                    <!-- How tech has affected activities page -->
+                    <a href="./blogs.html" class="navbar-links" id="blogs-page">BLOGS</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="./research.html" class="navbar-links" id="research-page">RESEARCH</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="./contactme.html" class="navbar-links" id="contactme-page">CONTACT US</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="./contactme.html" class="navbar-links" id="contactme-page">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mainDiv">
+        <h1 style="text-align: left;">Unleash your knowlwdge.</h1>
+        <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia quidem omnis maiores voluptatum ratione commodi tempora impedit accusantium sequi, molestias dolorum est. Quae laudantium impedit voluptas nobis mollitia distinctio.
+        </p>
+        <br>
+        <h1>Browse our products.</h1>
+        <img src="../images/product1.jpg" alt="product-1 photo" width="200px" height="200px" id="product-1">
+        <img src="../images/product2.jpg" alt="product-2 photo" width="200px" height="200px" id="product-2">
+        <img src="../images/product3.jpg" alt="product-3 photo" width="200px" height="200px" id="product-3">
+
+    </div>
+
+    <script src="../logic/app.js"></script>
+    <script>
+        getBlogText();
+        setInterval(blogIncrement, 3000);
+    </script>
+    <footer class="footer">
+        <p>&copy;BOOKBAR since 2022, All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
